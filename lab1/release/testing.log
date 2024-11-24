@@ -8,5 +8,5 @@ PASS   : Tester::testCMYKToHLSConversionIntoBoxes()
 PASS   : Tester::testHLSToRGBConversionIntoSliders()
 PASS   : Tester::testHLSToRGBConversionIntoBoxes()
 PASS   : Tester::cleanupTestCase()
-Totals: 8 passed, 0 failed, 0 skipped, 0 blacklisted, 9ms
+Totals: 8 passed, 0 failed, 0 skipped, 0 blacklisted, 13ms
 ********* Finished testing of Tester *********
