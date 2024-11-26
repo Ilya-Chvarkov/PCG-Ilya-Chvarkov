@@ -22,7 +22,7 @@ void MainWindow::createUI()
     qDebug()<< rrr.lightness()<<"\n";
 */
 
-    // RGB sliders and line edits
+
     rSlider = new QSlider(Qt::Horizontal);
     gSlider = new QSlider(Qt::Horizontal);
     bSlider = new QSlider(Qt::Horizontal);
@@ -65,7 +65,7 @@ void MainWindow::createUI()
     ySlider->setRange(0, 100);
     kSlider->setRange(0, 100);
     kSlider->setValue(100);
-    // CMYK line edits
+    // //
     cEdit = new QLineEdit;
     mEdit = new QLineEdit;
     yEdit = new QLineEdit;
@@ -126,7 +126,7 @@ void MainWindow::createUI()
     hlsLayout->addWidget(sEdit, 2, 2);
     hlsBox->setLayout(hlsLayout);
 //////////////////////////////////////////////////////
-    // Color display
+
     colorDisplay = new QLabel;
     colorDisplay->setFixedSize(100, 100);
     colorDisplay->setStyleSheet("background-color: rgb(255, 255, 255);");
@@ -148,7 +148,7 @@ void MainWindow::createUI()
 ///
 ///
 ///
-    // Signals and slots
+
     connect(rSlider, &QSlider::valueChanged, this, &MainWindow::updateRGB);
     connect(gSlider, &QSlider::valueChanged, this, &MainWindow::updateRGB);
     connect(bSlider, &QSlider::valueChanged, this, &MainWindow::updateRGB);
@@ -179,7 +179,7 @@ void MainWindow::createUI()
     connect(this, &MainWindow::colorChanged, this, &MainWindow::updateInf);
     connect(colorPickerButton, &QPushButton::clicked, this, &MainWindow::pickColor);
 
-    //hSlider->setValue(357);
+
 
 }
 

@@ -35,22 +35,19 @@ private slots:
     void pickColor();
 
 private:
-    // RGB components
+
     QSlider *rSlider, *gSlider, *bSlider;
     QSlider *cSlider, *mSlider, *ySlider, *kSlider;
     QSlider *hSlider, *lSlider, *sSlider;
     QLineEdit *rEdit, *gEdit, *bEdit;
 
-    // CMYK components
     QLineEdit *cEdit, *mEdit, *yEdit, *kEdit;
 
-    // HLS components
     QLineEdit *hEdit, *lEdit, *sEdit;
 
-    // Color display
+
     QLabel *colorDisplay;
 
-    // Color conversion functions
     QColor rgbToColor();
     QColor cmykToColor();
     QColor hlsToColor();
